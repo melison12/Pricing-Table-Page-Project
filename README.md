@@ -2,14 +2,6 @@
 This repository contains a user-friendly Pricing Table webpage, designed using HTML, CSS, and the Flexbox layout module. It offers a clean and interactive user interface for different pricing plans.
 
 
-
-Table of Contents
-
-Introduction
-Technology Stack
-Features
-
-
 Introduction
 
 The Pricing Table Page Project is an elegant representation of different pricing tiers for a product or service. The responsive design of this webpage makes it accessible and easy-to-use on any device, enhancing the overall user experience.
