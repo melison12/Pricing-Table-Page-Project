@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Sono', sans-serif;
+      background-color: cadetblue;
+    }
+
+
+
+    section{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: #3586ff;
+      overflow: hidden;
+      animation: wave 30s linear infinite;
+      background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png) repeat-x bottom;
+      background-size: 1000px 100px;
+    }
+
+    .pricing-container{
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      height: 95vh;
+    }
+
+    .pricing-plan{
+      background-color: lightgray;
+      text-align: center;
+      height: 500px;
+      width: 300px;
+      border-radius: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .plan-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 15%;
+    }
+
+    .plan-price {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .plan-features {
+      list-style-type: none;
+    }
+
+    .plan-features li {
+      margin: 10px 0;
+      transition: 0.3s;
+    }
+
+    .plan-features li:hover {
+      transform: scale(1.05);
+    }
+
+    .glow-on-hover {  
+      margin-top: auto;
+      margin-bottom: 20px;
+      width: 220px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+    }
+
+    /* Your existing .glow-on-hover related styles */
+
+    @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction: column;
+      }
+
+      .pricing-plan{
+        height: 300px;
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="pricing-container">
+      <!-- Your existing pricing plan divs, with correct button elements -->
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="glow-on-hover">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="glow-on-hover">Sign Up</button>
+      </div>
+  
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="glow-on-hover">Sign Up</button>
+      </div>
+      
+    </div>
+  </section>
+  </body>
+  
+  </html>
